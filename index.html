@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carlos Alberto Herrera Pérez - CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #eef2f3, #ffffff);
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #0a192f;
+      color: #fff;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    header h1 {
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #64ffda;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeIn 1s ease-in;
+    }
+    h2 {
+      color: #0a192f;
+      border-bottom: 2px solid #64ffda;
+      padding-bottom: 0.3rem;
+      margin-top: 2rem;
+    }
+    .exp-entry, .skill-entry {
+      margin-bottom: 1.2rem;
+    }
+    .contact {
+      background: #e0f7fa;
+      padding: 1.5rem;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background-color: #0a192f;
+      color: white;
+    }
+    ul li::marker {
+      color: #64ffda;
+    }
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Carlos Alberto Herrera Pérez</h1>
+    <p>Ingeniero en Sistemas Computacionales | Especialista en TI</p>
+  </header>
+
+  <section>
+    <h2>Sobre mí</h2>
+    <p>Soy un ingeniero en sistemas computacionales apasionado por la tecnología. Cuento con más de 6 años de experiencia en la implementación de software, la administración de servidores y el soporte técnico. He trabajado en proyectos que han mejorado la eficiencia y la seguridad de los sistemas en diversas industrias.</p>
+  </section>
+
+  <section>
+    <h2>Experiencia Laboral</h2>
+    <div class="exp-entry">
+      <strong>Grupo City Abasto y El Patrón</strong> <em>(Ene 2020 - Presente)</em>
+      <p>Ingeniero de Infraestructuras TI - Optimizar sistemas internos, asegurar la continuidad operativa y brindar soporte técnico.</p>
+    </div>
+    <div class="exp-entry">
+      <strong>ITEC</strong> <em>(Ene 2018 - Dic 2019)</em>
+      <p>Especialista en TI - Soporte a clientes, videovigilancia, ERP, monitoreo de servidores Linux y Microsoft.</p>
+    </div>
+    <div class="exp-entry">
+      <strong>Interlap</strong> <em>(Ene 2017 - Dic 2017)</em>
+      <p>Técnico en Informática - Implementación de hardware y conexiones PTP/PTM.</p>
+    </div>
+    <div class="exp-entry">
+      <strong>Hewlett Packard</strong> <em>(Mar 2016 - Ene 2017)</em>
+      <p>Help Desk Support Specialist - Soporte remoto en hardware, software y redes.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Habilidades</h2>
+    <ul>
+      <li>Administración de servidores Windows y Linux</li>
+      <li>Señalamiento digital, redes, CCTV</li>
+      <li>Sistemas Aspel y Contpaq</li>
+      <li>Monitoreo y respaldo (PRTG, UrBackup)</li>
+      <li>Active Directory</li>
+      <li>Office 365</li>
+      <li>Virtualización (Hyper-V, VirtualBox)</li>
+      <li>Reparación de hardware</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>Contacto</h2>
+    <p><strong>Correo:</strong> carlos.herrera.mxg@gmail.com</p>
+    <p><strong>Tel:</strong> +52 477 207 2351</p>
+    <p><strong>Ubicación:</strong> El Retiro, León, Guanajuato</p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3Bi3vNAwLfRRm%2F8y9WvHkujw%3D%3D" target="_blank">Mi perfil</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Carlos Alberto Herrera Pérez</p>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      const header = document.querySelector('header');
+      if (window.scrollY > 10) {
+        header.style.boxShadow = '0 2px 8px rgba(0,0,0,0.2)';
+      } else {
+        header.style.boxShadow = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
